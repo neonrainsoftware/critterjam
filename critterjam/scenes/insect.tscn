@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://c4fcrqhpyanbw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fi4pd"]
+size = Vector2(20.4854, 19.5127)
+
+[node name="Insect" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(2.32458e-06, 2.26498e-06)
+rotation = 1.5708
+scale = Vector2(4.68626, 4.91988)
+shape = SubResource("RectangleShape2D_fi4pd")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="CharacterBody2D"]
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
