@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctw61nnvo8q2y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvhfp"]
+size = Vector2(24.8501, 1176.92)
+
+[node name="Wall" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 321)
+shape = SubResource("RectangleShape2D_uvhfp")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(578, 0.999998)
+rotation = -1.57209
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_uvhfp")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1151, 321)
+shape = SubResource("RectangleShape2D_uvhfp")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(577.56, 650.937)
+rotation = 1.56723
+shape = SubResource("RectangleShape2D_uvhfp")

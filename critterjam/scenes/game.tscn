@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://dg0hqeyl3jlpd"]
+[gd_scene load_steps=3 format=3 uid="uid://dg0hqeyl3jlpd"]
 
 [ext_resource type="PackedScene" uid="uid://c4fcrqhpyanbw" path="res://scenes/insect.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://ctw61nnvo8q2y" path="res://scenes/wall.tscn" id="2_yqjtg"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Insect" parent="." instance=ExtResource("1_uwrxv")]
-position = Vector2(499, 293)
+position = Vector2(507, 313)
+
+[node name="Wall" parent="." instance=ExtResource("2_yqjtg")]
+position = Vector2(-9, -10)

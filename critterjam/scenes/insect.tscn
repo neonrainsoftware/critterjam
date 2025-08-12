@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://c4fcrqhpyanbw"]
+[gd_scene load_steps=3 format=3 uid="uid://c4fcrqhpyanbw"]
+
+[ext_resource type="Script" uid="uid://b4lga1yk7waw6" path="res://scritps/insect.gd" id="1_yog2j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fi4pd"]
 size = Vector2(20.4854, 19.5127)
@@ -6,6 +8,7 @@ size = Vector2(20.4854, 19.5127)
 [node name="Insect" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_yog2j")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(2.32458e-06, 2.26498e-06)
